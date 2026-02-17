@@ -1,0 +1,4 @@
+#!/bin/bash
+set -e
+gunicorn app:server -b 0.0.0.0:8888 --workers 1 &
+exec jupyter lab --ip=0.0.0.0 --no-browser --allow-root
