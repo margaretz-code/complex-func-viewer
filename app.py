@@ -30,7 +30,7 @@ def make_fig(n=21):
         return x**2
 
     Z = f(X + Y * 1j)
-    opacity = 0.5
+    opacity = 0.6
 #    real_surface = go.Surface(x=X, y=Y, z=Z.real, opacity=opacity, colorscale='gray', colorbar=dict(x=1.0, title="Real"))
 #    imag_surface = go.Surface(x=X, y=Y, z=Z.imag, opacity=opacity, colorscale='turbo', colorbar=dict(x=1.1, title="Imag"))
     surface = go.Surface(x=X, y=Y, z=Z.real, opacity=1, colorscale=colorscale, colorbar=dict(x=1.1, title="y.imag"),
