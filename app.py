@@ -94,4 +94,4 @@ def update_npoint_slider(value):
     return fig
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8888)
+    app.run_server(host="0.0.0.0", port=8888)  # don't use app.run(...) start jupyterlab and build somthing 
